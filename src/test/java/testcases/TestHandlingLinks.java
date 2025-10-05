@@ -19,7 +19,8 @@ public class TestHandlingLinks {
 		Locator links = page.locator("a");
 		System.out.println(links.count());
 		for(int i=0; i<links.count(); i++) {
-			System.out.println(links.nth(i).innerText()+"---URL: ----"+links.nth(i).getAttribute("href"));
+			Locator link=links.nth(i);
+			System.out.println(link.innerText()+"---URL: ----"+links.nth(i).getAttribute("href"));
 		}
 		Locator block = page.locator("//*[@id=\"www-wikipedia-org\"]/footer/nav");
 		Locator blocklinks = block.locator("a");

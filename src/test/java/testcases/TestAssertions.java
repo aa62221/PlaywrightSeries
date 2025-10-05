@@ -24,7 +24,6 @@ public class TestAssertions {
 		assertThat(page).hasTitle("HTML Tutorial - Checkboxes");
 		
 		assertThat(page.locator("#menu > a:nth-child(29)")).hasText("HTML - Tags");
-		
 		assertThat(page.locator("//html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr/td/div[6]/input[1]")).isChecked();
 		assertThat(page.locator("//html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr/td/div[6]/input[1]")).isVisible();
 		//assertThat(page.locator("//html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr/td/div[6]/input[2]")).isChecked();
